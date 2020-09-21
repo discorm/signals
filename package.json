@@ -1,0 +1,39 @@
+{
+  "name": "@disco/signals",
+  "version": "1.0.0",
+  "description": "Signal system middleware for disco",
+  "author": "Stephen Belanger <admin@stephenbelanger.com> (http://stephenbelanger.com/)",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "precoverage": "npm run test",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "lint": "standard",
+    "pretest": "npm run lint",
+    "test": "nyc tap test.js"
+  },
+  "keywords": [
+    "disco",
+    "signals",
+    "events",
+    "emitter"
+  ],
+  "homepage": "https://github.com/discorm/signals#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/discorm/signals.git"
+  },
+  "bugs": {
+    "url": "https://github.com/discorm/signals/issues"
+  },
+  "devDependencies": {
+    "@disco/disco": "^1.0.0",
+    "codecov": "^3.6.1",
+    "nyc": "^15.0.0",
+    "standard": "^14.3.1",
+    "tap": "^14.10.5"
+  },
+  "dependencies": {
+    "parallel-async-emitter": "^1.0.0"
+  }
+}
