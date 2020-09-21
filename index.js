@@ -27,3 +27,4 @@ function middleware () {
 }
 
 module.exports = middleware
+middleware.addSignals = addSignals
